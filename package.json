@@ -22,7 +22,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json"
+    "build": "tsc -p tsconfig.json && node -e \"require('fs').copyFileSync('openclaw.plugin.json','dist/openclaw.plugin.json')\""
   },
   "peerDependencies": {
     "openclaw": ">=2026.9.1"
@@ -44,11 +44,11 @@
     "inference",
     "provider-plugin"
   ],
-  "author": "",
+  "author": "yangshu114514",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TODO/openclaw-nous-portal-free.git"
+    "url": "https://github.com/yangshu114514/openclaw-nous-portal-free.git"
   },
   "openclaw": {
     "extensions": [
