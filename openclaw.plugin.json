@@ -1,0 +1,17 @@
+{
+	"id": "nous-portal-free",
+	"name": "Nous Portal Free",
+	"description": "Nous Portal free-tier models via a loopback JWT proxy — no funded API key required",
+	"activation": { "onStartup": false },
+	"enabledByDefault": true,
+	"providers": ["nous-portal-free"],
+	"providerRequest": {
+		"providers": { "nous-portal-free": { "family": "openai-compatible" } }
+	},
+	"modelCatalog": { "discovery": { "nous-portal-free": "refreshable" } },
+	"configSchema": {
+		"type": "object",
+		"additionalProperties": false,
+		"properties": {}
+	}
+}
