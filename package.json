@@ -1,0 +1,61 @@
+{
+  "name": "openclaw-nous-portal-free",
+  "version": "0.1.0",
+  "description": "Run Nous Portal's free-tier models in OpenClaw — no funded API key required. OAuth device-code login, live free-catalog discovery, local JWT proxy.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "nous-portal-free": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "openclaw.plugin.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "keywords": [
+    "openclaw",
+    "nous",
+    "nous-research",
+    "nous-portal",
+    "free-models",
+    "llm",
+    "inference",
+    "provider-plugin"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TODO/openclaw-nous-portal-free.git"
+  },
+  "openclaw": {
+    "extensions": [
+      "./dist/index.js"
+    ],
+    "compat": {
+      "pluginApi": ">=2026.9.1"
+    }
+  }
+}

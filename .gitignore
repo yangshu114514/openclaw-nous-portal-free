@@ -1,0 +1,5 @@
+node_modules/
+dist/
+*.log
+dev-credentials.json
+.DS_Store
